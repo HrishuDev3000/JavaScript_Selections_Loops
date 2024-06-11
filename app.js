@@ -8,15 +8,15 @@ for(let i = 0; i <= 100; i++){  // Do I only print out the words for odd numbers
         console.log(i);
     }
 
-    if( i % 3 == 0){
+    if( i % 15 == 0){
         console.log("FIZZ");
      }
  
-     if(i % 5 == 0){
+     else if (i % 5 == 0){
          console.log("BUZZ");
      }
  
-     if(i % 15 == 0){
+     else if (i % 3 == 0){
          console.log("FIZZBUZZ");
      }
 
@@ -46,7 +46,7 @@ while(k < 101){
     }
   }
 
-  if(k % 5 == 0){
+  else if(k % 5 == 0){
     console.log("BUZZ");
   }
 
@@ -83,9 +83,9 @@ for(let i = start; i <= m; i++){  // Do I only print out the words for odd numbe
         console.log(i);
     }
 
-    if( k % 3 == 0){
+    if( i % fizzDivisor == 0){
 
-        if(k % 5 == 0){
+        if(i % buzzDivisor == 0){
             console.log("FIZZBUZZ");
         }
     
@@ -94,12 +94,8 @@ for(let i = start; i <= m; i++){  // Do I only print out the words for odd numbe
         }
     }
     
-    if(k % 5 == 0){
+    else if(i % buzzDivisor == 0){
         console.log("BUZZ");
       }
-
-
-
-
     
 }
